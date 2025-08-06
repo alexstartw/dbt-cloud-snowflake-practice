@@ -38,8 +38,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     staging:
-      +schema: ALEX_LOAD_SAMPLE_DATA_FROM_S3_STAGING
+      +schema: _STAGING
       +materialized: view
     bi:
-      +schema: ALEX_LOAD_SAMPLE_DATA_FROM_S3_BI
+      +schema: _BI
       +materialized: table
