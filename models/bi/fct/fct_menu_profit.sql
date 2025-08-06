@@ -6,4 +6,4 @@ SELECT
   sale_price_usd,
   cost_of_goods_usd,
   sale_price_usd - cost_of_goods_usd AS profit_usd
-FROM {{ ref('stg_menu') }};
+FROM {{ ref('stg_menu') }}

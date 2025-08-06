@@ -6,4 +6,4 @@ SELECT DISTINCT
   item_subcategory,
   truck_brand_name,
   menu_type
-FROM {{ ref('stg_menu') }};
+FROM {{ ref('stg_menu') }}
