@@ -15,4 +15,4 @@ WITH base AS (
   FROM {{ source('SNOWFLAKE_LEARNING_DB', 'MENU') }}
 )
 
-SELECT * FROM base;
+SELECT * FROM base
