@@ -12,7 +12,7 @@ WITH base AS (
     cost_of_goods_usd,
     sale_price_usd,
     menu_item_health_metrics_obj
-  FROM {{ source('snowflake_learning_db', 'menu') }}
+  FROM {{ source('SNOWFLAKE_LEARNING_DB', 'MENU') }}
 )
 
 SELECT * FROM base;

@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: snowflake_learning_db
-    schema: alex_load_sample_data_from_s3
+  - name: SNOWFLAKE_LEARNING_DB
+    schema: ALEX_LOAD_SAMPLE_DATA_FROM_S3
     tables:
       - name: menu
 
