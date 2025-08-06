@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fct_menu_profit
+    description: >
+      事實表，呈現每個菜單品項的售價、成本與利潤資訊。
+      可用於分析不同品牌、商品類型的獲利能力。
+    columns:
+      - name: menu_item_id
+        description: "菜單項目的唯一識別碼"
+        tests:
+          - not_null
+
+      - name: menu_item_name
+        description: "菜單項目的名稱"
+
+      - name: truck_brand_name
+        description: "所屬餐車品牌"
+
+      - name: sale_price_usd
+        description: "商品售價（美元）"
+
+      - name: cost_of_goods_usd
+        description: "商品成本（美元）"
+
+      - name: profit_usd
+        description: "商品利潤（售價 - 成本）"

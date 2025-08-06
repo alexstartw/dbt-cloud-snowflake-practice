@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: dim_menu_item
+    description: >
+      維度表，定義每項菜單品項的分類資訊。用於後續報表中分析不同品牌與菜單類型的商品。
+    columns:
+      - name: menu_item_id
+        description: "菜單項目的唯一識別碼"
+        tests:
+          - not_null
+          - unique
+
+      - name: menu_item_name
+        description: "菜單項目的名稱"
+
+      - name: item_category
+        description: "菜單項目的主要分類，例如飲料、主餐等"
+
+      - name: item_subcategory
+        description: "菜單項目的次分類，例如氣泡飲料、甜點等"
+
+      - name: truck_brand_name
+        description: "販售該商品的餐車品牌名稱"
+
+      - name: menu_type
+        description: "該商品所屬的菜單類型，例如主菜、加購、套餐"
