@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: snowflake_learning_db
+    schema: alex_load_sample_data_from_s3
+    tables:
+      - name: menu
+
+models:
+  - name: stg_menu
+    description: "Cleaned staging table for menu items"
+    columns:
+      - name: menu_item_id
+        tests:
+          - not_null
+          - unique
+      - name: truck_brand_name
+        tests:
+          - not_null
