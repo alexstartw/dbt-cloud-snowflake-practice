@@ -40,7 +40,7 @@ models:
     staging:
       +schema: STAGING
       +materialized: view
-      +tags: ['dev', 'staging', 'prod']
+      +tags: ['staging']
     bi:
       +schema: BI
       +materialized: table
