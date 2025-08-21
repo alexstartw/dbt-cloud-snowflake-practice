@@ -8,8 +8,8 @@ models:
       - name: menu_item_id
         description: "菜單項目的唯一識別碼"
         tests:
-          - not_null : {}
-          - unique : {}
+          - not_null: {}
+          - unique: {}
 
       - name: menu_item_name
         description: "菜單項目的名稱"
