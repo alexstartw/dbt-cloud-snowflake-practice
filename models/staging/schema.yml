@@ -12,8 +12,8 @@ models:
     columns:
       - name: menu_item_id
         tests:
-          - not_null
+          - not_null: {}
           - unique
       - name: truck_brand_name
         tests:
-          - not_null
+          - not_null: {}
